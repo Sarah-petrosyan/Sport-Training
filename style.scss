@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$primary-color: #292d33;
+$secondary-color: #ffffff;
+$text-color:#858e99;
+$sub-title-color:#ccd3db;
+%flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.t-center{
+text-align: center;
+}
+.py-5{
+  padding:50px 0;
+}
+.container{
+  max-width: 1600px;
+  margin: auto;
+}
+.row{
+  @extend %flex;
+  gap: 25px 0;
+  justify-content: space-around;
+}
+.container-md{
+  max-width: 1200px;
+  margin: auto;
+  background-color: $primary-color;
+}
+.container-sm{
+  max-width: 800px;
+  margin: auto;
+}
+.sport-club{
+  background-color: $primary-color;
+  padding:50px 0;
+}
+.title{
+  color: $text-color;
+  font-size:24px;
+}
+.sub-title{
+  font-family: "Oswald", sans-serif;
+  color: $sub-title-color;
+  font-size:60px;
+}
+.banner-1{
+  width:60%;
+
+  .row{
+    justify-content: center;
+    gap:20px;
+  }
+}
+.banner-2{
+  width:40%;
+}
+.banner-2-img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+.banner-card{
+  width:40%;
+  text-align: center;
+  background-color: $secondary-color;
+  padding:30px;
+
+  h3{
+    color:#555c66;
+    margin:10px 0;
+    font-size:24px;
+    font-weight:500;
+  }
+
+  p{
+    color:#555c66;
+    font-size:16px;
+    line-height: 1.5;
+    margin:10px 0;
+    font-style:italic;
+  }
+
+  img{
+    width:45%;
+  }
+
+}
+
+//STRATEGY CODE
+
+.strategy{
+  background: linear-gradient(0deg,rgba(41, 45, 51, 1) 0%, rgba(41, 45, 51, 1) 78%, rgba(209, 209, 209, 1) 79%, rgba(255, 255, 255, 1) 99%);
+
+
+  .title{
+    color:$primary-color;
+    font-size:48px;
+  }
+}
+.card{
+  width:95%;
+  background-color: $secondary-color;
+  text-align: center;
+  padding:20px;
+  border-radius:15px;
+  margin:20px 0;
+
+  img{
+    width:35%;
+  }
+
+  h3{
+    font-size:20px;
+    margin: 10px 0;
+  }
+
+  p{
+    font-size:16px;
+    margin: 10px 0;
+  }
+}
+.card-container{
+  width:50%;
+}
+.card-container:nth-child(1){
+  margin:130px 0 0;
+}
