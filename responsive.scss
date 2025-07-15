@@ -10,6 +10,7 @@
     height: 100%;
     object-fit: cover;
   }
+
 }
 @media only screen and (max-width: 800px) {
   .banner-1 {
@@ -17,6 +18,16 @@
   }
   .banner-2 {
     width: 73%;
+  }
+  .col-2{
+    width: 32%;
+    margin-bottom:15px;
+  }
+  .team-img{
+    width: 48%;
+  }
+  .team-img:nth-child(even) {
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -44,5 +55,17 @@
   }
   .card-container:nth-child(1){
     margin:0;
+  }
+  .col-2{
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 400px) {
+
+  .col-2{
+    width: 100%;
+  }
+  .team-img{
+    width: 100%;
   }
 }
